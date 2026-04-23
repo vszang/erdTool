@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip install *)",
+      "Bash(python -m pytest tests/test_parser.py -v)",
+      "Bash(python -m venv .venv)",
+      "Bash(.venv/Scripts/pip install *)",
+      "Bash(.venv/Scripts/python -m pytest tests/test_parser.py -v)",
+      "Bash(.venv/Scripts/python -m pytest tests/test_erd_generator.py -v)",
+      "Bash(.venv/Scripts/python -m pytest tests/ -v)",
+      "Bash(npm --version)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(.venv/Scripts/python -c \"from standalone.app import app; print\\('Flask import OK'\\)\")",
+      "Bash(.venv/Scripts/python -m standalone.app)",
+      "Bash(curl -s http://127.0.0.1:5000/)",
+      "Bash(curl -s http://127.0.0.1:5000/api/template -o /tmp/tmpl_test.xlsx -w \"%{http_code}\")",
+      "Bash(python3 -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\(f'{len\\(d\\)} tables'\\); [print\\(f'  {k}: {v[\\\\\"table_name\\\\\"]} \\({len\\(v[\\\\\"columns\\\\\"]\\)} cols\\)'\\) for k,v in list\\(d.items\\(\\)\\)[:5]]\")",
+      "Bash(curl -s -X POST http://127.0.0.1:5000/api/parse -F file=@C:/Task/WTool/erdTool/core/assets/template.xlsx)",
+      "Bash(.venv/Scripts/python -c \"from core.parser import parse_file; r = parse_file\\('core/assets/template.xlsx'\\); print\\(len\\(r\\), 'tables'\\)\")",
+      "Bash(.venv/Scripts/python -c ' *)",
+      "Bash(taskkill /F /IM python.exe)",
+      "Bash(.venv/Scripts/python standalone/app.py)",
+      "Bash(pkill -f \"standalone/app.py\")",
+      "Bash(git init *)",
+      "Bash(git remote *)",
+      "Bash(git add *)"
+    ]
+  }
+}

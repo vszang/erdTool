@@ -1,0 +1,20 @@
+# Core
+xlrd==2.0.1
+openpyxl==3.1.5
+pandas==2.2.3
+
+# Standalone
+flask==3.1.0
+python-dotenv==1.0.1
+
+# MCP
+mcp==1.6.0
+
+# Export
+python-pptx==1.0.2
+
+# Packaging
+pyinstaller==6.13.0
+
+# Dev
+pytest==8.3.5
